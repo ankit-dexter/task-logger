@@ -1,0 +1,26 @@
+.TaskData {
+  display: list-item;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 8px solid rgb(57, 63, 58);
+  background-color: rgba(236, 234, 236, 0.938);
+  width: 80%;
+  height: 100%;
+  overflow: scroll;
+}
+
+@media (max-width: 499px) {
+  .TaskData {
+    display: list-item;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    border-top: 8px solid rgb(57, 63, 58);
+    border-left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-bottom: 100px;
+    overflow: scroll;
+  }
+}

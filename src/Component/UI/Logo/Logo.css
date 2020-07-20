@@ -1,0 +1,19 @@
+.Logo {
+    background-color: rgb(56, 55, 48);;
+    margin-top: 50px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 70px;
+}
+.Logo:hover{
+    
+    border: 5px  #966909;
+    box-shadow:         0px 0px 3px 3px rgb(27, 79, 114);
+    color: #966909;
+    cursor: pointer;
+    
+}
+
+.Logo img {
+    height: 100%;
+}

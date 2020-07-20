@@ -1,0 +1,165 @@
+.DataNode {
+  position: relative;
+  align-content: left;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.DataNode table {
+  min-width: 100%;
+  min-height: 200px;
+  position: relative;
+  border-collapse: collapse;
+}
+
+.DataNode table thead {
+  height: 40px;
+  background-image: linear-gradient(rgb(61, 56, 51), #111);
+  box-shadow: 50px #111;
+  text-align: left;
+  color: white;
+  border-left: 1px solid black;
+  font-size: 100%;
+}
+.DataNode table td {
+  border: 1px solid #111;
+}
+
+.DataNode table th {
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.DataNode table tfoot td {
+  border: none;
+}
+
+.link {
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.DataNode table .Comment {
+  height: 40px;
+  background-image: linear-gradient(#111, rgb(61, 56, 51));
+  box-shadow: 50px #111;
+  text-align: center;
+  color: white;
+  border: 1px solid black;
+  border-bottom: 1px solid white;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.DataNode table .Sidenav {
+  height: 100%;
+  min-width: 30%;
+  position: relative;
+
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.Button {
+  display: flex;
+  flex-flow: row;
+  align-items: right;
+  justify-content: right;
+}
+
+.Button button {
+  background-color: #f7e438; /* Green */
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9em;
+  margin: 5px 4px 4px 4px;
+  cursor: pointer;
+}
+
+.Button .Red {
+  background-color: rgb(243, 55, 55);
+
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9em;
+  margin: 5px 4px 4px 4px;
+  cursor: pointer;
+}
+
+.Button .Green {
+  background-color: rgb(108, 189, 105);
+
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9em;
+  margin: 5px 4px 4px 4px;
+  cursor: pointer;
+}
+
+.DataNode table .Sidenav p {
+  padding: 1px 10% 1px 10%;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #f5f0f0;
+  display: block;
+  cursor: pointer;
+}
+
+.DataNode table .Sidenav p:hover {
+  color: #fcd010;
+}
+
+.DataNode table .Sidenav p .Act {
+  clear: both;
+}
+
+.DataNode table .Main {
+  padding: 2%;
+  min-width: 100%;
+  border-right: 1px solid black;
+  overflow-x: scroll;
+  overflow-wrap: break-word;
+}
+
+.Switch {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 499px) {
+  .DataNode table .Sidenav {
+    padding-top: 15px;
+    min-width: 40%;
+  }
+  .DataNode table .Main {
+    min-width: 60%;
+  }
+  .DataNode table .Sidenav a {
+    font-size: 1em;
+  }
+  .DataNode {
+    font-size: 0.7em;
+    width: 100%;
+  }
+  .DataNode table {
+    width: 100%;
+  }
+}
